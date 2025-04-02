@@ -29,3 +29,12 @@ CREATE TABLE IF NOT EXISTS rooster (
     klas_id INT,
     docent_id INT NOT NULL
 );
+
+USE scoro_database;
+
+CREATE TABLE IF NOT EXISTS absentie (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	rooster-id INT NOT NULL,
+	rollen VARCHAR NOT NULL,
+	actief BOOL NOT NULL,
+	inval BOOL NOT NULL,
